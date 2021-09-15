@@ -13,18 +13,9 @@
 - [x] Visual Studio Code
 ## Code examples:
 ```javascript
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example</title>
-</head>
-<body>
-  <p>Example code</p>
-</body>
-</html>
+function getParticipants(handshakes){
+  return Math.ceil((1 + Math.sqrt(1 + 8 * handshakes)) / 2);
+}
 ```
 ## Work experience:
 No experience.<br>
