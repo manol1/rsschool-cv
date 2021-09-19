@@ -4,84 +4,177 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
   <body>
-    <div class="center">
-      <header>
-        <h1>Andrei Mandrik</h1>
-        <p>JS / Frontend Development</p>
-        <img class="foto" src="foto.png" alt="foto">
-      </header>
-
-      <section>
-        <h2>Contacts:</h2>
-        <ul>
-          <li><b>Phone:</b> +375 29 140 58 04</li>
-          <li><b>Email:</b> mandrik_a_a@mail.ru</li>
-          <li><b>Github:</b> manol1</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Summary:</h2>
-        <p class="italic"> I am a beginner IT specialist with no work experience. I started studying the sphere with testing. Successfully completed the Software Testing courses. In the course of my studies, I got more interested in HTML, CSS, JavaScript. At the moment I am independently studying at htmlacademy.ru, rs.school. I already know something that I don’t know - I’ll find information, improve my knowledge. I know how to work in a team. I want to develop professionally in IT.</p>
-      </section>
-
-      <section>
-        <h2>Skills:</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Github</li>
-            <li>Visual Studio Code</li>
+    <div class="container-main">
+      <header class="header" id="header">
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__link"><a class="link" href="#contacts">Contacts</a></li>
+            <li class="navigation__link"><a class="link" href="#summary">Summary</a></li>
+            <li class="navigation__link"><a class="link" href="#skills">Skills</a></li>
+            <li class="navigation__link"><a class="link" href="#code-example">Code example</a></li>
+            <li class="navigation__link"><a class="link" href="#education">Education</a></li>
+            <li class="navigation__link"><a class="link" href="#projects">Projects</a></li>
           </ul>
-      </section>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="section-photo">
+            <div class="photo-description-block">
+              <div class="photo-description-block__photo">
+                <img class="photo" src="img/foto.png" alt="photo">
+              </div>
+              <div class="photo-description-block__description">
+                <div class="photo-description-block__description-container">
+                  <h1>Andrei Mandrik</h1>
+                  <p>JS / Frontend Developer</p>
+                  <p>Minsk</p>
+                </div>
+                <div class="photo-description-block__back"></div>
+              </div>
+            </div>
+        </section>
+        <section class="section" id="contacts">
+          <div class="section-container">
+            <div class="section-container__h2">
+              <h2>Contacts:</h2>
+            </div>
+            <div class="section-container__content">
+              <ul>
+                <li class="contacts-li contacts-li_phone">+375 29 140 58 04</li>
+                <li class="contacts-li contacts-li_email">mandrik_a_a@mail.ru</li>
+                <li class="contacts-li contacts-li_git">manol1</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="summary">
+          <div class="section-container">
+            <div class="section-container__h2">
+              <h2>Summary:</h2>
+            </div>
+            <div class="summary-container__content">
+              I am a beginner IT specialist with no work experience. I started studying the sphere with testing. In the course of my studies, I got more interested in HTML, CSS, JavaScript.<br><br>At the moment I am studying at RS School. I already know something that I don’t know - I’ll find information, improve my knowledge. I know how to work in a team. I want to develop professionally in IT.
+            </div>
+          </div>
+        </section>
+        <section class="section" id="skills">
+          <div class="section-container">
+            <div class="section-container__h2">
+              <h2>Skills:</h2>
+            </div>
+            <div class="section-container__content">
+              <ul class="skills-li">
+                <li class="contacts-li skills-li_html">HTML</li>
+                <li class="contacts-li skills-li_css">CSS</li>
+                <li class="contacts-li skills-li_js">JavaScript</li>
+                <li class="contacts-li skills-li_github">GitHub</li>
+                <li class="contacts-li skills-li_vsc">VS Code</li>
+                <li class="contacts-li skills-li_figma">Figma</li>
+                <li class="contacts-li skills-li_eng">English level: A2</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="code-example">
+          <div class="section-container">
+            <div class="code-container__h2">
+              <h2>Code example:</h2>
+            </div>
 
-      <section>
-        <h2>Code examples:</h2>
-        <pre class="code">
-          <code>
-  &lt!DOCTYPE html&gt
-  &lthtml lang="en"&gt
-  &lthead&gt
-    &ltmeta charset="UTF-8"&gt
-    &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
-    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
-    &lttitle&gtExample&lt/title&gt
-  &lt/head&gt
-  &ltbody&gt
-    &ltp&gtExample code&lt/p&gt
-  &lt/body&gt
-  &lt/html&gt
-          </code>
-        </pre>
-      </section>
-
-      <section>
-        <h2>Work experience:</h2>
-        <p>No experience.<br>
-            Courses: Software Tester.<br>
-            Educational projects: htmlacademy.ru, rs.school.</p>
-      </section>
-
-      <section>
-        <h2>Education:</h2>
-        <p>BNTU</p>
-      </section>
-
-      <section>
-        <h2>English level:</h2>
-        <p>A2</p>
-      </section>
-
-      <footer>
-        <a href="https://github.com/manol1">Github</a>
-        <p>2021</p> 
-        <a href="https://rs.school/js/">
-          <img class="logo" src="rs_school_js.svg" alt="logo">
-        </a>
+            <pre class="code">
+              <code>
+function getParticipants(handshakes){
+  return Math.ceil((1 + Math.sqrt(1 + 8 * handshakes)) / 2);
+}   
+                </code>
+            </pre>
+          </div>
+        </section>
+        <section class="section" id="education">
+          <div class="section-container">
+            <div class="section-container__h2">
+              <h2>Education:</h2>
+            </div>
+            <div class="section-container__content">
+              <ul>
+                <li>Belarusian National Technical University</li>
+                <li>self-study: HTML Academy, RS School</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="projects">
+          <div class="section-container">
+            <div class="section-container__h2">
+              <h2>Projects:</h2>
+            </div>
+            <div class="section-container__content">
+              <div class="projects-container">
+                <div class="project">
+                  <a href="https://rolling-scopes-school.github.io/manol1-JSFEPRESCHOOL/museum/" target="_blank" class="project-link">
+                    <div class="project__description">
+                      <h3>Museum</h3>
+                      <p>landing page Louvre</p>
+                      <p>(html, css)</p>
+                    </div>
+                    <div class="project__image">
+                      <img src="img/museum.jpg" alt="museum">
+                    </div>
+                  </a>
+                </div>
+                <div class="project">
+                  <a href="https://manol1-js30.netlify.app/" target="_blank" class="project-link">
+                    <div class="project__description">
+                      <h3>Vertical Slider</h3>
+                      <p>вертикальный слайдер на JavaScript</p>
+                      <p>(html, css, js)</p>
+                    </div>
+                    <div class="project__image">
+                      <img src="img/slider.png" alt="slider">
+                    </div>
+                  </a>
+                </div>
+                <div class="project-last">
+                  <a href="https://manol1-custom-video-player.netlify.app/" target="_blank" class="project-link">
+                    <div class="project__description">
+                      <h3>Custom Video Player</h3>
+                      <p>(html, css, js)</p>
+                    </div>
+                    <div class="project__image">
+                      <img src="img/player.png" alt="player">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-container section">
+          <div class="footer-container__git">
+            <a class="git-link" href="https://github.com/manol1" target="_blank">
+              <div class="rs-link">Github</div>
+            </a>
+          </div>
+          <div class="footer-container__year">
+            <a href="#header" class="git-link">
+              <p>🠕 2021 🠕</p>
+            </a>
+          </div>
+          <div class="footer-container__rs">
+            <a href="https://rs.school/js/" target="_blank">
+              <!-- <img class="logoRS" src="svg/rs_school_js.svg" alt="logoRS"> -->
+              <div class="rs-link"></div>
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
