@@ -8,18 +8,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- highlight -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
   <body>
     <div class="container-main">
       <header class="header" id="header">
         <nav class="header__navigation">
           <ul class="navigation">
-            <li class="navigation__link"><a class="link" href="#contacts">Contacts</a></li>
             <li class="navigation__link"><a class="link" href="#summary">Summary</a></li>
             <li class="navigation__link"><a class="link" href="#skills">Skills</a></li>
-            <li class="navigation__link"><a class="link" href="#code-example">Code example</a></li>
+            <li class="navigation__link"><a class="link" href="#code-example">Code</a></li>
             <li class="navigation__link"><a class="link" href="#education">Education</a></li>
             <li class="navigation__link"><a class="link" href="#projects">Projects</a></li>
+            <li class="navigation__link"><a class="link" href="#video-cv">Video CV</a></li>
           </ul>
         </nav>
       </header>
@@ -59,7 +63,8 @@
               <h2>Summary:</h2>
             </div>
             <div class="summary-container__content">
-              I am a beginner IT specialist with no work experience. I started studying the sphere with testing. In the course of my studies, I got more interested in HTML, CSS, JavaScript.<br><br>At the moment I am studying at RS School. I already know something that I don’t know - I’ll find information, improve my knowledge. I know how to work in a team. I want to develop professionally in IT.
+              <p>I am a beginner IT specialist with no work experience. I started studying the sphere with testing. In the course of my studies, I got more interested in HTML, CSS, JavaScript.</p><br>
+              <p>At the moment I am studying at RS School. I already know something that I don’t know - I’ll find information, improve my knowledge. I know how to work in a team. I want to develop professionally in IT.</p>
             </div>
           </div>
         </section>
@@ -84,15 +89,14 @@
         <section class="section" id="code-example">
           <div class="section-container">
             <div class="code-container__h2">
-              <h2>Code example:</h2>
+              <h2>Code:</h2>
             </div>
-
             <pre class="code">
               <code>
 function getParticipants(handshakes){
   return Math.ceil((1 + Math.sqrt(1 + 8 * handshakes)) / 2);
 }   
-                </code>
+              </code>
             </pre>
           </div>
         </section>
@@ -117,41 +121,51 @@ function getParticipants(handshakes){
             <div class="section-container__content">
               <div class="projects-container">
                 <div class="project">
-                  <a href="https://rolling-scopes-school.github.io/manol1-JSFEPRESCHOOL/museum/" target="_blank" class="project-link">
-                    <div class="project__description">
-                      <h3>Museum</h3>
-                      <p>landing page Louvre</p>
-                      <p>(html, css)</p>
-                    </div>
-                    <div class="project__image">
+                  <a class="project-link" href="https://rolling-scopes-school.github.io/manol1-JSFEPRESCHOOL/museum/" target="_blank">
+                    <figure class="project__image">
+                      <figcaption class="project__description">
+                        <h3>Museum</h3>
+                        <p>landing page Louvre</p>
+                        <p>(html, css)</p>
+                      </figcaption>
                       <img src="img/museum.jpg" alt="museum">
-                    </div>
+                    </figure>
                   </a>
                 </div>
                 <div class="project">
-                  <a href="https://manol1-js30.netlify.app/" target="_blank" class="project-link">
-                    <div class="project__description">
-                      <h3>Vertical Slider</h3>
-                      <p>вертикальный слайдер на JavaScript</p>
-                      <p>(html, css, js)</p>
-                    </div>
-                    <div class="project__image">
+                  <a class="project-link" href="https://manol1-js30.netlify.app/" target="_blank">
+                    <figure class="project__image">
+                      <figcaption class="project__description">
+                        <h3>Vertical Slider</h3>
+                        <p>вертикальный слайдер на JavaScript</p>
+                        <p>(html, css, js)</p>
+                      </figcaption>
                       <img src="img/slider.png" alt="slider">
-                    </div>
+                    </figure>
                   </a>
                 </div>
                 <div class="project-last">
-                  <a href="https://manol1-custom-video-player.netlify.app/" target="_blank" class="project-link">
-                    <div class="project__description">
-                      <h3>Custom Video Player</h3>
-                      <p>(html, css, js)</p>
-                    </div>
-                    <div class="project__image">
+                  <a class="project-link" href="https://manol1-custom-video-player.netlify.app/" target="_blank">
+                    <figure class="project__image">
+                      <figcaption class="project__description">
+                        <h3>Custom Video Player</h3>
+                        <p>(html, css, js)</p>
+                      </figcaption>
                       <img src="img/player.png" alt="player">
-                    </div>
+                    </figure>
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="video-cv">
+          <div class="section-container">
+            <div class="section-container__h2">
+              <h2>Video CV:</h2>
+            </div>
+            <div class="section-container__content">
+              <iframe src="https://www.youtube.com/embed/fRHA_mrMMH0" title="video-cv"></iframe>
             </div>
           </div>
         </section>
@@ -164,18 +178,18 @@ function getParticipants(handshakes){
             </a>
           </div>
           <div class="footer-container__year">
-            <a href="#header" class="git-link">
+            <a class="git-link" href="#header">
               <p>🠕 2021 🠕</p>
             </a>
           </div>
           <div class="footer-container__rs">
             <a href="https://rs.school/js/" target="_blank">
-              <!-- <img class="logoRS" src="svg/rs_school_js.svg" alt="logoRS"> -->
               <div class="rs-link"></div>
             </a>
           </div>
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

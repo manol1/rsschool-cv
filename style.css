@@ -18,20 +18,15 @@ html {
 body {
   font-family: Poppins, Arial, sans-serif;
   font-size: 1.6rem;
-  background-color: var(--color-back);
-  color: var(--color-body);
   letter-spacing: 1px;
-}
-
-.container {
-  
+  color: var(--color-body);
+  background-color: var(--color-back);
 }
 
 .container-main {
-  /* height: 100vh; */
-  background-color: #343945;
   max-width: 920px;
   margin: auto;
+  background-color: #343945;
 }
 
 li {
@@ -39,14 +34,14 @@ li {
 }
 
 .link {
-  text-decoration: none;
   font-weight: 600;
   color: var(--color-main);
+  text-decoration: none;
 }
 
 .link:hover {
-  text-decoration: none;
   color: var(--color-body);
+  text-decoration: none;
 }
 
 .navigation {
@@ -68,39 +63,31 @@ li {
 }
 
 .photo-description-block {
-  height: 300px;
   display: flex;
+  height: 300px;
 }
 
 .photo-description-block__description {
-
   display: flex;
   align-items: center;
   width: 100%;
   padding-left: 4rem;
-  /* padding-top: 6rem; */
-  /* padding-bottom: 1rem; */
-  color: var(--color-back);
-  background-color: var(--color-main);
-
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
-  
-  
+  color: var(--color-back);
+  background-color: var(--color-main);
 }
 
 .photo-description-block__description-container {
-  
-  line-height: 4rem;
   width: 50%;
+  line-height: 4rem;
 }
 
 .photo-description-block__back {
-  
   width: 50%;
   height: 90%;
-  background-image: url(img/2.png);
+  background-image: url("img/2.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -114,9 +101,10 @@ h2 {
   color: var(--color-main);
 }
 
-h1, h2 {
-  text-transform: uppercase;
+h1, 
+h2 {
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .section {
@@ -155,20 +143,11 @@ h1, h2 {
   padding-left: 4rem;
 }
 
-/* .section-photo-ul {
-  font-size: 1.6rem;
-  line-height: 4rem;
-  padding-top: 3.5rem;
-  text-transform: lowercase;
-} */
-
-
-
 .contacts-li {
+  padding-left: 5rem;
   background-repeat: no-repeat;
   background-size: 2.5rem;
   background-position: left center;
-  padding-left: 5rem;
 }
 
 .contacts-li_phone {
@@ -197,12 +176,10 @@ h1, h2 {
 
 .skills-li_js {
   background-image: url("svg/js.svg");
-
 }
 
 .skills-li_github {
   background-image: url("svg/github.svg");
-
 }
 
 .skills-li_vsc {
@@ -211,7 +188,6 @@ h1, h2 {
 
 .skills-li_figma {
   background-image: url("svg/figma.svg");
-  
 }
 
 .skills-li_eng {
@@ -220,13 +196,10 @@ h1, h2 {
 
 .code {
   padding-left: 4rem;
-  overflow: auto;
   margin-top: -1.6rem;
   margin-bottom: -2rem;
+  overflow: auto;
 }
-
-
-
 
 
 /* projects */
@@ -235,17 +208,16 @@ h1, h2 {
   width: 100%;
 }
 
-
 .project {
   width: 100%;
-  border: 1px solid var(--color-body);
   margin-bottom: 2rem;
+  border: 1px solid var(--color-body);
 }
 
 .project:hover {
   width: 100%;
-  border: 1px solid var(--color-main);
   margin-bottom: 2rem;
+  border: 1px solid var(--color-main);
 }
 
 .project-last {
@@ -259,44 +231,47 @@ h1, h2 {
 }
 
 .project__description {
-  background-color: #000;
-  text-align: center;
-  line-height: normal;
-  font-size: 1.2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: normal;
+  background-color: #000000;
 }
 
 
 .project__image img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 .project-link {
-  text-decoration: none;
   color: var(--color-body);
+  text-decoration: none;
 }
 
 .project-link:hover {
-  text-decoration: none;
   color: var(--color-main);
+  text-decoration: none;
 }
 
+iframe {
+  width: 100%;
+  height: 315px;
+}
 
 /* footer */
 .footer-container {
-  justify-content: space-around;
-  text-align: center;
   font-size: 2.4rem;
   font-weight: 600;
+  text-align: center;
   color: var(--color-main);
 }
 
 .footer-container__git {
   width: 31%;
+  margin: 0 auto;
   border: 1px solid var(--color-main);
-  margin: auto;
 }
 
 .footer-container__git:hover {
@@ -305,41 +280,35 @@ h1, h2 {
 
 .footer-container__year {
   width: 38%;
+  margin: 0 auto;
   border-top: 1px solid var(--color-main);
   border-bottom: 1px solid var(--color-main);
-  margin: auto;
 }
 
 .footer-container__year:hover {
   border: 1px solid var(--color-body);
 }
 
-
 .footer-container__rs {
   width: 31%;
   border: 1px solid var(--color-main);
-  background-image: url(svg/rs_school_js.svg);
+  background-image: url("svg/rs_school_js.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .footer-container__rs:hover {
-  background-image: url(svg/rs_school_js_white.svg);
+  background-image: url("svg/rs_school_js_white.svg");
   border: 1px solid var(--color-body);
 }
 
-.rs-link {
-  height: 100%;
-}
-
-
 .git-link {
-  text-decoration: none;
   color: var(--color-main);
+  text-decoration: none;
 }
 
 .git-link:hover {
-  text-decoration: none;
   color: var(--color-body);
+  text-decoration: none;
 }
